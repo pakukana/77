@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>77</title>
+    
+    <link rel="stylesheet" type="text/css" href="xxx.css">
+    <script src="xxxx.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: beige;
+        }
+        .head ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .head li{
+            list-style: none;
+        }
+        
+        .menu-icon{
+            margin-top: 30px;
+            font-size: 25px;
+            color: cadetblue;
+            
+            
+        }
+        
+        .menu-icon:hover{
+            cursor: pointer;
+        }
+        
+        .namae p{
+            font-family: 'Laila', serif;
+            font-size: 25px;
+        }
+        
+        .home-icon{
+            font-size: 25px;
+            color: darkgray;
+            margin-top: 30px;
+        }
+        .home-icon i{
+            padding-right: 8px;
+        }
+        
+        .home-icon i:hover{
+            cursor: pointer;
+        }
+        
+        .contents{
+            text-align: center;
+            position: relative;
+        }
+        
+        .contents p{
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            color: white;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+        
+    
+        
+        .hidden{
+            display: none;
+            max-width: 100%;
+            max-height:240px;
+            background-color: 
+        }
+        
+        .hidden li{
+            list-style: none;
+            color: cadetblue;
+            font-weight: bold;
+            font-size: 20px;
+            font-family:sans-serif;
+            padding-top: 14px;
+            
+        }
+        #boo{
+            border-bottom: none;
+        }
+        
+        .hidden a{
+            color: cadetblue;
+            text-decoration: none;
+            border-bottom: solid 2px white;
+        }
+        
+        .hidden i{
+            padding-right: 8px;
+            font-size: 24px;
+        }
+        .hidden a:hover{
+            
+        }
+        
+        .photo-area{
+            display: flex;
+             flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            
+        }
+        
+        .photo-area img{
+            width:45%;
+            padding-top: 25px;
+            border-radius: 40px;
+            opacity: 0.8;
+        }
+        
+        .photo-area img:hover{
+            opacity: 0.5;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+<div class="head">
+<ul>   
+ <li id="menu-icon" class="menu-icon"><i class="fas fa-bars"></i> </li>   
+
+    
+   <li class="namae"><p>HOME EXCHANGE</p></li>
+    
+    <li class="home-icon"><i class="fas fa-home"></i><i class="fas fa-user-circle"></i></li>
+</ul> 
+</div>
+   
+
+<div  id="hidden" class="hidden">
+    <ul>
+     <li id="boo"><p>Customer service</p></li>
+        <li><a href="#"><i class="fas fa-bookmark"></i>About Us</a></li>
+        <li><a href="#"><i class="fal fa-envelope-square"></i>Contact us</a></li>
+        <li><a href="#"><i class="fas fa-female"></i>Recruit</a></li>
+    </ul>
+</div>    
+    
+    
+    
+    
+    
+<div class="contents">
+    <img src="77.jpg">
+    <p>LIFE&HOME EXCHANGE</p>
+</div>    
+    
+
+<div class="photo-area">
+    <img class="p1" src="771.jpg">
+    <p class="a">Cozy nature rent house!</p>
+    <h2>Norwich, England</h2>
+    
+    <img class="p2" src="772.jpg">
+    <p class="b">Queit garden blessed with natural surroudings</p>
+    <h2>Nottingham, England</h2>
+    
+    <img class="p3" src="773.jpg">
+    <p class="c">Simple nature apartment in heart of the city</p>
+    <h2>London, England</h2>
+</div>   
+    
+    
+    
+<script>
+    $(document).ready(function(){
+        $('#menu-icon').on('click', function(){
+                  $('#hidden').slideToggle('slow');      
+                           });
+    });
+</script>    
+    
+</body>
+</html>
+
+
